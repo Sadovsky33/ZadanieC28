@@ -1,2 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using powtórka;
+
+class PlikGłówny
+{
+    static void Main(String[] args)
+    {
+        Tablice tablica = new Tablice();
+
+        tablica.Wyswietl();
+    }
+
+}
