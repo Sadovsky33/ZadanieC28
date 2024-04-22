@@ -8,7 +8,13 @@ class PlikGłówny
 
         int[] tab = tablica.Tworzenie_tablicy();
 
-        tablica.Wyswietl(tab);
-    }
 
+        tablica.Sortowanie(tab);
+        tablica.Wyswietl(tab);
+
+        tablica.Przeszukaj(tab);
+
+    }
 }
+      
+    
