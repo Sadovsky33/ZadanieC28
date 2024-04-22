@@ -8,13 +8,16 @@ namespace powtórka
 {
     public class Tablice
     {
-        public void Wyswietl()
+        public void Wyswietl(int[] tab)
         {
-            Console.WriteLine("111");
+            for (int i = 0; i < tab.Length; i++) 
+            {
+                Console.Write(tab[i]+ ",");
+            }
         }
 
 
-        public void Tworzenie_tablicy()
+        public int[] Tworzenie_tablicy()
         {
             Console.WriteLine("ile znaków ma mieć tablica?");
             int dl = int.Parse(Console.ReadLine());
@@ -26,6 +29,7 @@ namespace powtórka
                 Console.WriteLine("podaj kolejny element:");
                 ints[i] = int.Parse(Console.ReadLine()) ;
             }
+            return ints;
         }
     }
 }

@@ -6,7 +6,9 @@ class PlikGłówny
     {
         Tablice tablica = new Tablice();
 
-        tablica.Wyswietl();
+        int[] tab = tablica.Tworzenie_tablicy();
+
+        tablica.Wyswietl(tab);
     }
 
 }
